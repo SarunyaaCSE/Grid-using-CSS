@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Grid in CSS
+        </title>
+    </head>
+    <body>
+        <style>
+            .container{
+                width:100%;
+                font-size: 50px;
+                background: gray;
+                display:grid;
+                grid-template-columns:75px 75px auto 1fr;
+                grid-template-rows:75px 75px 75px;
+                grid-column-gap:5px;
+                grid-row-gap:5px;
+            }
+            .item1{
+                background-color: lightseagreen;
+            }
+            .item2{
+                background-color:lightpink;
+            }
+            .item3{
+                background-color:lightsalmon;
+            }
+            .item4{
+                background-color: lightcoral;
+            }
+            .item5{
+                background-color: lightgreen;
+            }
+            .container1{
+                width:450px;
+                font-size: 50px;
+                background: peachpuff;
+                display:grid;
+                grid-gap:10px 10px;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 75px 75px 75px 75px;
+                justify-items:top;
+                align-items:end;
+            }
+            .box1{
+                background-color: coral;
+                justify-self:center;
+            }
+            .box2{
+                background-color: chartreuse;
+                align-self:end;
+            }
+            .box3{
+                background-color: chocolate;
+            }
+            .box4{
+                background-color: crimson;
+            }
+            .box5{
+                background-color: deeppink;
+            }
+            .box6{
+                background-color: aqua;
+            }
+            .box7{
+                background-color: magenta;
+                grid-column:1/4;
+            }
+            .box8{
+                background-color: navy;
+                grid-row:4/6;
+            }
+            h3{
+                font-size:30px;
+            }
+        </style>
+        <h3>GRID USING CSS</h3>
+        <div class="container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container1">
+            <div class="box1">A</div>
+            <div class="box2">B</div>
+            <div class="box3">C</div>
+            <div class="box4">D</div>
+            <div class="box5">E</div>
+            <div class="box6">F</div>
+            <div class="box7">G</div>
+            <div class="box8">H</div>
+        </div>
+    </body>
+</html>
